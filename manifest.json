@@ -1,0 +1,27 @@
+{
+	"name": "Fetöcüsavar",
+	"description": "Fetöcüleri başınızdan sonsuza dek salın!",
+	"version": "1.0",
+	"permissions": [
+	  "activeTab"
+	],
+	"content_scripts": [
+		{
+		"matches": ["http://twitter.com/*", "https://twitter.com/*"],
+		 "js": ["content.js"],
+		 "run_at": "document_end"
+		}
+	   ],
+	"browser_action": {
+	  "default_title": "Kes lan Fetöcü!",
+	  "default_icon": "feto_128.png",
+	  "default_popup": "popup.html"
+
+	},
+	"icons": {
+		"16": "feto_16.png",
+		"48": "feto_48.png",
+	   "128": "feto_128.png"
+	},
+	"manifest_version": 2
+  }
